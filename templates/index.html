@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <head>
+    <title>Tweet Extarction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/style.css') }}">
+  </head>
+
+<body>
+<div class="container">
+  <div class="brand-logo"></div>
+  <div class="brand-title">TWEET EXTRACTOR</div>
+  <div class="brand-title-small">For Twitter Sentiment Analysis</div>
+  <div class="inputs">
+      <form action = "/getinput" method = "post">
+          <Label>Enter keyword:</label>
+          <input type = "text" name = "search_word" />
+          <label>Enter tweet count</label>
+          <input type = "text" name = "count" />
+          <label>Enter the dataset name</label>
+          <input type = "text" name = "dname" />
+          <button type = "submit">SUBMIT</button>
+        </form>	
+  </div>
+  
+</div>
+</body>
+</html>
